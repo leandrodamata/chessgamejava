@@ -6,6 +6,7 @@ public class UI {
 	
 	public static void printBoard(ChessPiece[][] pieces) {
 		for (int i = 0; i < pieces.length; i++) {
+			//logica para imprimir a partir do 8 ate o 1
 			System.out.print((8 - i) + " ");
 			for (int j = 0; j < pieces.length; j++) {
 				printPiece(pieces[i][j]);

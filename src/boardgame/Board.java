@@ -29,10 +29,14 @@ public class Board {
 		this.columns = columns;
 	}
 	
+	//Este método retorna a peça localizada na posição especificada pelas coordenadas
+	//row (linha) e column (coluna) do tabuleiro
 	public Piece piece(int row, int column) {
 		return pieces[row][column];
 	}
 	
+	//O método utiliza o objeto Position para obter as coordenadas da posição e chama
+	//o método piece(int row, int column) para retornar a peça naquela posição.
 	public Piece piece(Position position) {
 		return pieces[position.getRow()][position.getColumn()];
 	}
