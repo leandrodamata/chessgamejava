@@ -40,5 +40,12 @@ public class Board {
 	public Piece piece(Position position) {
 		return pieces[position.getRow()][position.getColumn()];
 	}
+	
+	//Método q pega a matriz de peças declarada aqui no Board na posição dada e atribuindo a peça
+	//informada, e informando que a peça não está mais em null
+	public void placePiece(Piece piece, Position position) {
+		pieces[position.getRow()][position.getColumn()] = piece;
+		piece.position = position;
+	}
 
 }
